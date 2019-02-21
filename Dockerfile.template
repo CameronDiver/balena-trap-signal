@@ -1,0 +1,7 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian
+
+WORKDIR /usr/src/app
+
+COPY trapsignal.sh .
+
+CMD ["/usr/src/app/trapsignal.sh"]
